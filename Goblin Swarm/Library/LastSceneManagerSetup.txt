@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Goblin_Swarm_Proto.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
