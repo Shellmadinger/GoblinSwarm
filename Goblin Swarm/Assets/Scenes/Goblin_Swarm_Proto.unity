@@ -251,6 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 553477205}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &612298092
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 612298093}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &628737899
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 628737900}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &648326003
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 889039869}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &928756009
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 928756011}
   - component: {fileID: 928756010}
+  - component: {fileID: 928756012}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -578,6 +587,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &928756012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928756009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7789e4c6051704c88052ffdac5d8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreThreshold: 0
+  scoreThresholdIncreaseFactor: 0
 --- !u!1 &1002172331
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1002172332}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &1043629347
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1119433795}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &1329930351
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1329930352}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &1393723113
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1393723114}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &1432034827
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1432034828}
+  minTime: 6
+  maxTime: 10
 --- !u!1 &1463144065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asset: {fileID: 6178857770850866610, guid: a7f2515e2fd3d56458f4a3e2866e1fcb, type: 3}
   spawnPoint: {fileID: 1973059683}
+  minTime: 6
+  maxTime: 10
 --- !u!4 &2061350756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 567418229369916161, guid: d3f38adbbd102524b9aa45ed09d2d822, type: 3}
@@ -1167,6 +1202,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1043629348}
+    - target: {fileID: 5275962759256615000, guid: 1248f0a111435a64283b70f16ba42158, type: 3}
+      propertyPath: bulletCoolDown
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5275962759256615001, guid: 1248f0a111435a64283b70f16ba42158, type: 3}
       propertyPath: m_RootOrder
       value: 2

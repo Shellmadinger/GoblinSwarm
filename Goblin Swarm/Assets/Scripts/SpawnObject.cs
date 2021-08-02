@@ -6,8 +6,9 @@ public class SpawnObject : MonoBehaviour {
     //Initializing Variables
     public GameObject asset;
     public Transform spawnPoint;
-    float minTime = 6;
-    float maxTime = 10;
+    //Public floats for GameManager. Easier to hardcode values due to number of spawners
+    public float minTime = 6;
+    public float maxTime = 10;
 
     // Use this for initialization
     void Start()
