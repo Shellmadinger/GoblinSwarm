@@ -135,5 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ebee3e735ac64468b080464c100307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreThreshold: 20
+  scoreThresholdIncreaseFactor: 10
+  goblinSpeedIncreaseFactor: 0.005
+  maxGoblinSpeed: 0.04
   objectLook: {fileID: 5275962759256615001, guid: 1248f0a111435a64283b70f16ba42158, type: 3}
   goblinSpeed: 0.01
