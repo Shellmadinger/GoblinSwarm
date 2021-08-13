@@ -10,7 +10,11 @@ public class Turrent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TouchRotate();
+        if (!Pause.isPaused)
+        {
+            TouchRotate();
+        }
+       
     }
 
     void TouchRotate()
