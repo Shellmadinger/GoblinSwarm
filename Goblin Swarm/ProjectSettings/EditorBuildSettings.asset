@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Goblin_Swarm_GameOver.unity
     guid: 9badc82ab8401df438e710f9bdab0502
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: 1f77b84ac2343a34692be8aaadf4ff26
   m_configObjects: {}
