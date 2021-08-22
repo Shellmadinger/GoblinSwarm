@@ -7,10 +7,16 @@ public class Turrent : MonoBehaviour
 {
     public GameObject bullet;
     public Transform spawnPoint;
+    public GameOver gameOverTrigger;
+
+    private void Start()
+    {
+        gameOverTrigger.Resume();
+    }
     // Update is called once per frame
     void Update()
     {
-        if (!Pause.isPaused)
+        if (!Pause.isPaused && !GameOver.gameOver)
         {
             TouchRotate();
         }
@@ -35,7 +41,7 @@ public class Turrent : MonoBehaviour
     {
         if (collision.gameObject.tag == "Goblin")
         {
-            SceneManager.LoadScene("Goblin_Swarm_GameOver");
+            gameOverTrigger.SetGameOver();
         }
     }
 }

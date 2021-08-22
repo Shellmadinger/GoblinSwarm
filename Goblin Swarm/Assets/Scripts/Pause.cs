@@ -7,7 +7,7 @@ public class Pause : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject pauseMenu;
-    public string sceneToLoad;
+    public string sceneToLoadQuit;
 
     private void Start()
     {
@@ -49,6 +49,6 @@ public class Pause : MonoBehaviour
 
     public void SetQuit()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoadQuit);
     }
 }

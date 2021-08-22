@@ -12,7 +12,6 @@ public class Goblin : MonoBehaviour
     public float goblinSpeed;
 
     float score;
-    bool goblinPause;
 
     private void Start()
     {
@@ -22,7 +21,7 @@ public class Goblin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Pause.isPaused)
+        if (!Pause.isPaused && !GameOver.gameOver)
         {
             MoveTowardsObject();
             IncreaseSpeed();

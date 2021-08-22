@@ -853,9 +853,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1815010422}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: Resume
+      - m_Target: {fileID: 1815010423}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 551790603}
-  sceneToLoad: 
+  sceneToLoadQuit: 
 --- !u!114 &1077457594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,8 +1504,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1815010422}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+      - m_Target: {fileID: 1815010423}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: SetQuit
         m_Mode: 1
         m_Arguments:
@@ -2152,6 +2152,7 @@ GameObject:
   - component: {fileID: 1815010419}
   - component: {fileID: 1815010418}
   - component: {fileID: 1815010422}
+  - component: {fileID: 1815010423}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2256,7 +2257,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 551790603}
-  sceneToLoad: Main_Menu
+  sceneToLoadQuit: Main_Menu
+--- !u!114 &1815010423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815010417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9bbf5f33d4f3b45a0c11175846b307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverMenu: {fileID: 2038063438}
+  sceneToLoadQuit: Main_Menu
 --- !u!1 &1893285783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,7 +2431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2038063439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2637,6 +2652,10 @@ PrefabInstance:
       propertyPath: bulletCoolDown
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5275962759256615000, guid: 1248f0a111435a64283b70f16ba42158, type: 3}
+      propertyPath: gameOverTrigger
+      value: 
+      objectReference: {fileID: 1815010423}
     - target: {fileID: 5275962759256615001, guid: 1248f0a111435a64283b70f16ba42158, type: 3}
       propertyPath: m_RootOrder
       value: 2
