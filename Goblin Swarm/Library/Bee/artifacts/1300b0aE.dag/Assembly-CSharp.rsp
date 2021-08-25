@@ -344,6 +344,7 @@
 "Assets/Scripts/DestroyOnHit.cs"
 "Assets/Scripts/GameOver.cs"
 "Assets/Scripts/Goblin.cs"
+"Assets/Scripts/GoblinInstance.cs"
 "Assets/Scripts/HudManager.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Pause.cs"

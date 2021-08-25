@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Goblin : MonoBehaviour
 {
-    public float scoreThreshold;
-    public float scoreThresholdIncreaseFactor;
-    public float goblinSpeedIncreaseFactor;
-    public float maxGoblinSpeed;
-    public Transform objectLook;
-    public float goblinSpeed;
+    public GoblinInstance newGoblin;
+    
 
+    Transform objectLook;
     float score;
 
     private void Start()
     {
         score = FindObjectOfType<HudManager>().GetComponent<HudManager>().goblinKills;
+        objectLook = FindObjectOfType<Turrent>().transform;
     }
 
     // Update is called once per frame
@@ -32,16 +30,15 @@ public class Goblin : MonoBehaviour
     void MoveTowardsObject()
     {
         transform.rotation = Quaternion.LookRotation(Vector3.forward, objectLook.position);
-        transform.position = Vector2.MoveTowards(transform.position, objectLook.position, goblinSpeed);
+        transform.position = Vector2.MoveTowards(transform.position, objectLook.position, newGoblin.goblinSpeed);
     }
 
     void IncreaseSpeed()
     {
-        if (score >= scoreThreshold && goblinSpeed <= maxGoblinSpeed)
+        if (score >= newGoblin.scoreThreshold && newGoblin.goblinSpeed <= newGoblin.maxGoblinSpeed)
         {
-            goblinSpeed += goblinSpeedIncreaseFactor;
-            scoreThreshold += scoreThresholdIncreaseFactor;
-            Debug.Log("Current Goblin Speed: " + goblinSpeed);
+            newGoblin.goblinSpeed += newGoblin.goblinSpeedIncreaseFactor;
+            newGoblin.scoreThreshold += newGoblin.scoreThresholdIncreaseFactor;
         }
     }
 
