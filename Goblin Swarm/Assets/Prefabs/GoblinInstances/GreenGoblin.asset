@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74e0cb4047e3ee49a43f4e0c25e4d8f, type: 3}
   m_Name: GreenGoblin
   m_EditorClassIdentifier: 
-  goblinHealth: 2
+  goblinHealth: 1
   goblinSpeed: 0.02
-  maxGoblinSpeed: 0.04
+  maxGoblinSpeed: 0.08
   scoreThreshold: 20
   scoreThresholdIncreaseFactor: 10
   goblinSpeedIncreaseFactor: 0.005

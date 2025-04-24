@@ -16,7 +16,7 @@ public class SpawnObject : MonoBehaviour
     {
 
         StartCoroutine(SpawnGoblin());
-
+        DifficultyScaling();
     }
 
     IEnumerator SpawnGoblin()
@@ -27,5 +27,13 @@ public class SpawnObject : MonoBehaviour
             GameObject goblin = Instantiate(asset, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         }
 
+    }
+
+    void DifficultyScaling()
+    {
+        if (1 == 1)
+        {
+            print(asset.GetComponent<Goblin>().newGoblin.goblinSpeed);
+        }
     }
 }
